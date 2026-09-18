@@ -1,211 +1,119 @@
-# Awesome-Multi-Agent-Orchestration
-
-## Top Multi-Agent Orchestration Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Multi-Agent Frameworks, Agent Orchestration, Stateful Workflows, Role-Based Crews, Visual Agent Builders & Autonomous Agent Systems*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Multi-Agent Orchestration**. These systems enable developers and teams to design, coordinate, and run multiple AI agents that collaborate on complex tasks—using role-based crews, graph-based state machines, conversational patterns, or visual workflows.
-
-
-
-**Examples** include CrewAI, AutoGen, LangGraph, OpenHands, Dify, Flowise, AgentOps, SuperAGI, Microsoft AutoGen Studio, Atomic Agents, CrewAI Enterprise, LangGraph Cloud, Lindy, AgentVerse, Flowise Cloud, BeeAI, and OpenBMB AgentVerse (the category leaders).
-
-
-
-**Open-source emphasis**: Multi-agent orchestration is one of the most open ecosystems in AI. The dominant frameworks (**LangGraph**, **CrewAI**, **AutoGen**, **Dify**, **Flowise**, **OpenHands**, etc.) are open-source at their core, with commercial hosted/enterprise offerings layered on top. This section is heavily expanded with every major active project.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[CrewAI Enterprise](https://www.crewai.com/)**  
-
-  Managed/enterprise offering built on the open-source CrewAI framework, providing production deployment, observability, and support for role-based multi-agent crews.
-
-
-
-- **[LangGraph Cloud / LangSmith](https://www.langchain.com/langgraph)**  
-
-  Hosted platform and observability suite for LangGraph, enabling scalable, stateful, long-running multi-agent workflows with checkpointing, debugging, and monitoring.
-
-
-
-- **[Dify Cloud](https://dify.ai/)**  
-
-  Hosted version of the open-source Dify platform for building and running agentic workflows, RAG applications, and multi-agent systems with a visual canvas.
-
-
-
-- **[Flowise Cloud](https://flowiseai.com/)**  
-
-  Hosted visual builder for LLM workflows and agents, based on the open-source Flowise project, with easy deployment of multi-step and multi-agent flows.
-
-
-
-- **[Lindy, AgentOps](https://www.lindy.ai/)**  
-
-  Platforms focused on no-code/low-code agent automation and specialized observability/monitoring for agent runs, evaluations, and production tracking.
-
-
-
-- **[Microsoft AutoGen Studio & related Azure offerings](https://microsoft.github.io/autogen/)**  
-
-  Hosted and enterprise tooling around the AutoGen ecosystem for building, testing, and deploying multi-agent conversational systems.
-
-
-
-- **[Other multi-agent SaaS & agent platforms](https://www.crewai.com/)**  
-
-  Additional commercial services for agent hosting, evaluation, memory, and end-to-end autonomous agent applications.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[LangGraph](https://github.com/langchain-ai/langgraph)**  
-
-  Leading low-level orchestration framework for building stateful, multi-actor, long-running LLM agents. Uses explicit graphs, checkpointing, human-in-the-loop, and durable execution—widely adopted for production multi-agent systems.
-
-
-
-- **[CrewAI](https://github.com/crewAIInc/crewAI)**  
-
-  Popular open-source framework for orchestrating role-playing autonomous AI agents. Define agents with roles, goals, and backstories, assign tasks, and let crews collaborate on complex goals with minimal boilerplate.
-
-
-
-- **[AutoGen (Microsoft / AG2)](https://github.com/microsoft/autogen)**  
-
-  Open-source framework for multi-agent conversation patterns, debate, group chat, and tool-using agents. Strong in research and flexible multi-agent interaction designs.
-
-
-
-- **[Dify](https://github.com/langgenius/dify)**  
-
-  Open-source platform for building production-ready agentic workflows, RAG pipelines, and multi-agent applications with a visual interface, API, and self-hosting support.
-
-
-
-- **[Flowise](https://github.com/FlowiseAI/Flowise)**  
-
-  Open-source visual tool for building LLM workflows and agents via a drag-and-drop interface, based on LangChain concepts and easily self-hosted.
-
-
-
-- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)**  
-
-  Open-source platform for autonomous AI software engineering agents that can plan, write, execute, and iterate on code in real development environments.
-
-
-
-- **[SuperAGI](https://github.com/TransformerOptimus/SuperAGI)**  
-
-  Open-source autonomous AI agent framework focused on running, managing, and extending multi-agent systems with tool use and long-running capabilities.
-
-
-
-- **[Atomic Agents, BeeAI, AgentVerse & related frameworks](https://github.com/search?q=multi-agent+OR+agent+orchestration+OR+CrewAI+OR+AutoGen)**  
-
-  Additional open-source libraries and platforms for structured agents, multi-agent simulation, lightweight orchestration, and experimental agent ecosystems.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **LangChain & LlamaIndex agent modules**: Foundational libraries that many multi-agent systems build upon for tools, memory, and retrieval.
-
-- **Pydantic-AI and structured agent frameworks**: Type-safe agent definitions and orchestration helpers.
-
-- **Visual builders**: Langflow and similar open visual workflow tools for agent composition.
-
-- **Observability**: Open tools and standards (OpenTelemetry, custom tracers) for monitoring agent runs.
-
-- **Memory & state layers**: Open memory systems and checkpoint stores used with LangGraph and similar runtimes.
-
-- Fully open stacks combining LangGraph or CrewAI for orchestration + Dify/Flowise for visual development + open observability.
-
-
-
-**Frameworks for building custom systems**:  
-
-The strongest open-source foundations in 2026 are **LangGraph** (production-grade stateful orchestration) and **CrewAI** (fast role-based multi-agent prototyping).  
-
-**AutoGen** excels at conversational and research-oriented multi-agent patterns.  
-
-**Dify** and **Flowise** provide open visual platforms for teams that prefer low-code composition.  
-
-**OpenHands** and similar projects focus on autonomous coding agents.  
-
-These can be combined with open memory, tool libraries, and evaluation frameworks.  
-
-Hosted offerings (CrewAI Enterprise, LangGraph Cloud, Dify Cloud, Flowise Cloud, etc.) add managed infrastructure, scaling, and enterprise support. Most serious multi-agent work still starts from the open-source cores listed above.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS/hosted or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Multi-agent systems can take autonomous actions (tool calls, code execution, external APIs). Proper guardrails, human-in-the-loop controls, cost monitoring, and security boundaries are essential.
-
-- Open-source frameworks offer maximum flexibility and transparency but require careful design for reliability, observability, and safety in production. Evaluate failure modes, evaluation strategies, and operational overhead before deploying critical agent systems.
-
-
+# 🤖 Awesome Multi-Agent Orchestration 🚀
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Multi-Agent Orchestration Banner" width="100%"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Multi-Agent-Orchestration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Multi-Agent-Orchestration?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Multi-Agent-Orchestration/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Multi-Agent-Orchestration?style=social" alt="GitHub forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Multi-Agent-Orchestration/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Multi-Agent-Orchestration" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 💡 Overview & Top Multi-Agent Orchestration Ecosystem
 
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on Multi-Agent Frameworks, Agent Orchestration, Stateful Workflows, Role-Based Crews, Visual Agent Builders & Autonomous Agent Systems.*
 
-**Made for AI engineers, agent developers, platform teams, and researchers building collaborative multi-agent systems.**  
+> [!NOTE]
+> **Last updated: September 2026**
 
-Let's keep multi-agent orchestration open, controllable, and production-ready—through both powerful open-source frameworks and complementary hosted platforms.
+This repository tracks notable **SaaS platforms** and **open-source frameworks** for **Multi-Agent Orchestration**. These systems enable software developers, AI engineers, and enterprise teams to design, coordinate, evaluate, and deploy autonomous LLM agents collaborating on complex workflows—using role-based crews, stateful graphs, conversational patterns, or visual drag-and-drop builders.
+
+---
+
+## 📑 Table of Contents
+- [🏢 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ How to Contribute](#️-how-to-contribute)
+- [🤝 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+> 📊 **Market Size & Structure**: The global AI Agent & Multi-Agent Orchestration market is estimated at **$5.2 Billion in 2026** (projected to reach **$38+ Billion by 2030** with a ~64% CAGR). The market structure is **moderately fragmented**—hyperscalers (Microsoft) dominate enterprise suite integration, while specialized pure-play platforms (LangChain/LangGraph Cloud, CrewAI Enterprise, Dify Cloud) lead in developer adoption and graph/crew orchestration.
+
+| SaaS Platform 🌐 | Enterprise Valuation / Funding 💰 | Starting Pricing Tier 💳 | Free Plan / Trial Limits 🆓 | Core Features & Description 📝 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft AutoGen Studio / Azure AI](https://microsoft.github.io/autogen/)** | **~$3.68 Trillion** (Market Cap) | **$0.03 / 1k tokens** (Pay-as-you-go via Azure AI) | **$200 Free Credits** (30-day Azure trial) | Managed enterprise environment for building multi-agent conversational patterns & tool-using agents. |
+| **[LangGraph Cloud / LangSmith](https://www.langchain.com/langgraph)** | **$1.25 Billion** (Valuation) | **$39 / user / month** (Plus Plan) | **5,000 Traces / month** (Developer Plan forever free) | Hosted stateful multi-agent cloud, checkpointing runtime, long-running workflow observability & evaluation. |
+| **[Dify Cloud](https://dify.ai/)** | **$180 Million** (Valuation) | **$59 / month** (Professional Plan) | **200 Message Credits** (One-time trial in Sandbox) | Visual canvas & backend workflow platform for multi-agent RAG pipelines, prompt engineering & agent hosting. |
+| **[CrewAI Enterprise](https://www.crewai.com/)** | **~$100 Million+** ($18M+ Funding) | **$25 / month** (Individual Pro) | **7-Day Free Trial** (Full workspace sandbox testing) | Enterprise platform for deploying, monitoring & governing role-based autonomous agent crews with RBAC. |
+| **[Lindy.ai](https://www.lindy.ai/)** | **~$50 Million** ($49.9M Funding) | **$29.99 / month** (Plus Plan) | **7-Day Free Trial** (~400 credits testing) | No-code AI agent builder for automated enterprise tasks, email handlers, meeting assistants & workflow triggers. |
+| **[AgentOps](https://www.agentops.ai/)** | **~$15 Million** ($2.6M Funding) | **$40 / month** (Pro Plan) | **5,000 Events / month** (Developer Plan forever free) | Observability, session replays, LLM cost tracking, and security benchmarking specifically built for multi-agent systems. |
+| **[Flowise Cloud](https://flowiseai.com/)** | *Acquired by Workday (2025)* | **$35 / month** (Starter Plan) | **2 Flows / 100 Predictions** (Cloud sunset November 2026) | Visual drag-and-drop builder for agentic workflows and LangChain nodes. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+> 🌟 **Open-Source Ecosystem**: Multi-agent orchestration relies heavily on open source. Below are the leading open-source repositories ranked by community GitHub stars.
+
+| Open-Source Project 🚀 | Stars ⭐️ | Description & Key Strengths 📌 |
+| :--- | :--- | :--- |
+| **[langchain-ai/langchain](https://github.com/langchain-ai/langchain)** | [![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=social&color=white)](https://github.com/langchain-ai/langchain/stargazers) | Foundational framework powering tools, memory, retrieval, and base agent abstractions across the AI ecosystem. |
+| **[langflow-ai/langflow](https://github.com/langflow-ai/langflow)** | [![GitHub stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social&color=white)](https://github.com/langflow-ai/langflow/stargazers) | Dynamic multi-agent visual UI builder for prototyping complex AI components and multi-agent graphs. |
+| **[langgenius/dify](https://github.com/langgenius/dify)** | [![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) | All-in-one open-source LLM app development platform with visual multi-agent workflow orchestration and self-hosting. |
+| **[All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands)** | [![GitHub stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=social&color=white)](https://github.com/All-Hands-AI/OpenHands/stargazers) | Autonomous AI software development agent capable of writing, running, and debugging code in sandbox environments. |
+| **[crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)** | [![GitHub stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=social&color=white)](https://github.com/crewAIInc/crewAI/stargazers) | Lean framework for engineering role-playing autonomous AI crews. Assign specific goals, backstories, and collaborative task pipelines. |
+| **[FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise)** | [![GitHub stars](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social&color=white)](https://github.com/FlowiseAI/Flowise/stargazers) | Open-source drag & drop visual builder for customized LLM agents and multi-agent chains. |
+| **[microsoft/autogen](https://github.com/microsoft/autogen)** | [![GitHub stars](https://img.shields.io/github/stars/microsoft/autogen?style=social&color=white)](https://github.com/microsoft/autogen/stargazers) | Multi-agent conversation framework enabling agent-to-agent dialogue, group chats, code execution, and complex problem-solving. |
+| **[run-llama/llama_index](https://github.com/run-llama/llama_index)** | [![GitHub stars](https://img.shields.io/github/stars/run-llama/llama_index?style=social&color=white)](https://github.com/run-llama/llama_index/stargazers) | Data framework for LLMs providing multi-agent data retrieval, agentic RAG, and structured knowledge connections. |
+| **[langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)** | [![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=social&color=white)](https://github.com/langchain-ai/langgraph/stargazers) | Low-level orchestration framework for cyclic, stateful, multi-actor LLM applications with human-in-the-loop controls. |
+| **[pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)** | [![GitHub stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=social&color=white)](https://github.com/pydantic/pydantic-ai/stargazers) | Type-safe production agent framework built on top of Pydantic for clean structured validation and control flow. |
+| **[TransformerOptimus/SuperAGI](https://github.com/TransformerOptimus/SuperAGI)** | [![GitHub stars](https://img.shields.io/github/stars/TransformerOptimus/SuperAGI?style=social&color=white)](https://github.com/TransformerOptimus/SuperAGI/stargazers) | Developer-first autonomous AI agent infrastructure for running, managing, and monitoring concurrent autonomous agents. |
+
+---
+
+### 🧩 Core Framework Selection Guide
+
+- **Production Stateful Orchestration**: Use **LangGraph** or **Pydantic-AI** for strict control flow, persistence, state recovery, and granular state-machine nodes.
+- **Role-Based Agent Teams**: Use **CrewAI** for defining human-like roles, delegating tasks, and running collaborative team workflows.
+- **Conversational Multi-Agent Workflows**: Use **AutoGen (AG2)** for inter-agent multi-party dialogue, code execution feedback loops, and debate networks.
+- **Visual & Low-Code Deployment**: Use **Dify**, **Langflow**, or **Flowise** for team-wide visual canvas design, prompt tweaking, and instant REST API publishing.
+- **Autonomous Software Engineering**: Use **OpenHands** for sandboxed code creation, bash terminal usage, and multi-step issue solving.
+
+---
+
+## 🛠️ How to Contribute
+
+Contributions are welcome! Please follow these simple guidelines:
+
+1. Fork this repository.
+2. Update `README.md` with factual project details, links, pricing, or star metrics.
+3. Keep entries organized within the respective tables.
+4. Open a Pull Request detailing your additions or updates.
+
+Check out our master list at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more curated tech repositories.
+
+---
+
+## 🤝 Support & Sponsorship
+
+If you find this repository helpful for your AI research or production agent stack, please consider supporting the project! 💖
+
+- 🌟 **Star this repo** to help others discover multi-agent tools!
+- 🍴 **Fork it** to customize your own resource list!
+- 📢 **Share it** on Twitter / X, LinkedIn, or developer forums!
+- ☕ **Sponsor the Maintainer**: Support continuous updates and curation via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Multi-Agent-Orchestration&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Multi-Agent-Orchestration&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** repository provided for educational and informational purposes.
+- Multi-agent systems execute code, interact with APIs, and modify file structures autonomously. Always configure safety boundaries, rate limits, sandbox containers, and human-in-the-loop approvals before running agentic workflows in production.

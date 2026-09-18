@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Glowing Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Pulse Gradient for Connections -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .node {
+      animation: float 4s ease-in-out infinite alternate;
+    }
+    .node-delay1 {
+      animation: float 5s ease-in-out infinite alternate-reverse;
+    }
+    .node-delay2 {
+      animation: float 3.5s ease-in-out infinite alternate;
+    }
+    .pulse-line {
+      stroke-dasharray: 10, 15;
+      animation: dash 20s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-12px); }
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -1000;
+      }
+    }
+    .title-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: url(#textGrad);
+    }
+    .subtitle-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+      letter-spacing: 1.5px;
+    }
+    .badge-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #38bdf8;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1196" height="316" x="2" y="2" rx="14" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Dynamic Network Background Lines -->
+  <g stroke="url(#lineGrad)" stroke-width="2" fill="none" class="pulse-line" opacity="0.6">
+    <path d="M 100 80 L 300 160 L 500 60 L 700 160 L 900 70 L 1100 160" />
+    <path d="M 150 250 L 350 140 L 600 240 L 850 130 L 1050 240" />
+    <path d="M 300 160 L 600 240 L 900 70" />
+  </g>
+
+  <!-- Dynamic Agent Nodes (Background/Side Elements) -->
+  <g filter="url(#glow)">
+    <!-- Node 1 -->
+    <g class="node" transform="translate(0, 0)">
+      <circle cx="120" cy="90" r="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+      <circle cx="120" cy="90" r="6" fill="#38bdf8"/>
+    </g>
+    <!-- Node 2 -->
+    <g class="node-delay1" transform="translate(0, 0)">
+      <circle cx="1080" cy="110" r="22" fill="#1e293b" stroke="#c084fc" stroke-width="3"/>
+      <circle cx="1080" cy="110" r="8" fill="#c084fc"/>
+    </g>
+    <!-- Node 3 -->
+    <g class="node-delay2" transform="translate(0, 0)">
+      <circle cx="140" cy="240" r="15" fill="#1e293b" stroke="#818cf8" stroke-width="2.5"/>
+      <circle cx="140" cy="240" r="5" fill="#818cf8"/>
+    </g>
+    <!-- Node 4 -->
+    <g class="node" transform="translate(0, 0)">
+      <circle cx="1040" cy="230" r="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5"/>
+      <circle cx="1040" cy="230" r="5" fill="#38bdf8"/>
+    </g>
+  </g>
+
+  <!-- Foreground Content Card -->
+  <g transform="translate(600, 160)" text-anchor="middle">
+    <!-- Semi-transparent dark overlay pill behind title for crisp readability -->
+    <rect x="-440" y="-105" width="880" height="210" rx="20" fill="#0f172a" fill-opacity="0.75" stroke="#334155" stroke-width="1"/>
+
+    <!-- Category Pill Badge -->
+    <rect x="-140" y="-85" width="280" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text y="-64" class="badge-text">⚡ AWESOME AI AGENT ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text y="-5" class="title-text">Awesome Multi-Agent Orchestration</text>
+
+    <!-- Subtitle -->
+    <text y="42" class="subtitle-text">Curated SaaS Platforms &amp; Open-Source Frameworks</text>
+    <text y="70" font-family="sans-serif" font-size="14" fill="#64748b">LangGraph • CrewAI • AutoGen • Dify • Flowise • OpenHands • AgentOps</text>
+  </g>
+</svg>
