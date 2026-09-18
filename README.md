@@ -57,7 +57,7 @@ This repository tracks notable **SaaS platforms** and **open-source frameworks**
 
 > 🌟 **Open-Source Ecosystem**: Multi-agent orchestration relies heavily on open source. Below are the leading open-source repositories ranked by community GitHub_Stars.
 
-| Open-Source Project 🚀 | Stars ⭐️ | Description & Key Strengths 📌 |
+| Open-Source Project 🚀 | Github_Stars ⭐️ | Description & Key Strengths 📌 |
 | :--- | :--- | :--- |
 | **[langchain-ai/langchain](https://github.com/langchain-ai/langchain)** | [![GitHub_Stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=social&color=white)](https://github.com/langchain-ai/langchain/stargazers) | Foundational framework powering tools, memory, retrieval, and base agent abstractions across the AI ecosystem. |
 | **[langflow-ai/langflow](https://github.com/langflow-ai/langflow)** | [![GitHub_Stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social&color=white)](https://github.com/langflow-ai/langflow/stargazers) | Dynamic multi-agent visual UI builder for prototyping complex AI components and multi-agent graphs. |
