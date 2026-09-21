@@ -70,6 +70,7 @@ This repository tracks notable **SaaS platforms** and **open-source frameworks**
 | **[langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)** | [![GitHub_Stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=social&color=white)](https://github.com/langchain-ai/langgraph/stargazers) | Low-level orchestration framework for cyclic, stateful, multi-actor LLM applications with human-in-the-loop controls. |
 | **[pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)** | [![GitHub_Stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=social&color=white)](https://github.com/pydantic/pydantic-ai/stargazers) | Type-safe production agent framework built on top of Pydantic for clean structured validation and control flow. |
 | **[TransformerOptimus/SuperAGI](https://github.com/TransformerOptimus/SuperAGI)** | [![GitHub_Stars](https://img.shields.io/github/stars/TransformerOptimus/SuperAGI?style=social&color=white)](https://github.com/TransformerOptimus/SuperAGI/stargazers) | Developer-first autonomous AI agent infrastructure for running, managing, and monitoring concurrent autonomous agents. |
+| **[braedonsaunders/bunkhouse](https://github.com/braedonsaunders/bunkhouse)** | [![GitHub_Stars](https://img.shields.io/github/stars/braedonsaunders/bunkhouse?style=social&color=white)](https://github.com/braedonsaunders/bunkhouse/stargazers) | Open-source AI employees for main-street business: multitenant company inbox, org chart, governed multi-agent teams. |
 
 ---
 
